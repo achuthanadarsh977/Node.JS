@@ -1,0 +1,28 @@
+
+
+
+<html>
+<body>
+
+    <h1>Javascript Function</h1>
+    <h2>Function SubSequence</h2>
+    <p>JavaScript functions are executed in the sequence they are called.</p>
+    <p id="demo"></p>
+
+    <script>
+    function myDisplayer(some){
+        document.getElementById('demo').innerHTML = some
+    }
+
+    function myCalculator(num1,num2){
+        return num1+num2
+    }
+
+    let result = myCalculator(1234,4321)
+
+    myDisplayer(result)
+
+    </script>
+
+</body>
+</html>
