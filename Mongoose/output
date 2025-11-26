@@ -1,0 +1,1571 @@
+Microsoft Windows [Version 10.0.26200.7171]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>nodemon index.js
+
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>
+
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>nodemon nodemon.js
+
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>
+nodemon index.js
+[nodemon] 3.1.11
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node index.js`
+Connected to MongoDB...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+Connected to MongoDB...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:10
+const
+
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (node:internal/modules/cjs/loader:1691:18)
+    at Module._compile (node:internal/modules/cjs/loader:1734:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:10
+const std
+      ^^^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (node:internal/modules/cjs/loader:1691:18)
+    at Module._compile (node:internal/modules/cjs/loader:1734:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:10
+const studentSchema =
+
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (node:internal/modules/cjs/loader:1691:18)
+    at Module._compile (node:internal/modules/cjs/loader:1734:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+Connected to MongoDB...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+Connected to MongoDB...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    NA
+    ^
+
+ReferenceError: NA is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:5)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+Connected to MongoDB...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:12
+})
+^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (node:internal/modules/cjs/loader:1691:18)
+    at Module._compile (node:internal/modules/cjs/loader:1734:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:16
+const Student =
+
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (node:internal/modules/cjs/loader:1691:18)
+    at Module._compile (node:internal/modules/cjs/loader:1734:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+(node:1888) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added to [Bus]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:18
+const s
+      ^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (node:internal/modules/cjs/loader:1691:18)
+    at Module._compile (node:internal/modules/cjs/loader:1734:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:18
+const st
+      ^^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (node:internal/modules/cjs/loader:1691:18)
+    at Module._compile (node:internal/modules/cjs/loader:1734:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:18
+const student =
+
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (node:internal/modules/cjs/loader:1691:18)
+    at Module._compile (node:internal/modules/cjs/loader:1734:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:21
+})
+^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (node:internal/modules/cjs/loader:1691:18)
+    at Module._compile (node:internal/modules/cjs/loader:1734:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:24
+const result = await student.
+               ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at wrapSafe (node:internal/modules/cjs/loader:1691:18)
+    at Module._compile (node:internal/modules/cjs/loader:1734:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+(node:9952) Warning: Failed to load the ES module: C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+(Use `node --trace-warnings ...` to show where the warning was created)
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:24
+const result = await student.save()
+               ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at wrapSafe (node:internal/modules/cjs/loader:1691:18)
+    at Module._compile (node:internal/modules/cjs/loader:1734:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:20
+const student = new Student({
+^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (node:internal/modules/cjs/loader:1691:18)
+    at Module._compile (node:internal/modules/cjs/loader:1734:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:20
+const student = new Student({
+^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (node:internal/modules/cjs/loader:1691:18)
+    at Module._compile (node:internal/modules/cjs/loader:1734:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:26
+const result = await student.save()
+
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (node:internal/modules/cjs/loader:1691:18)
+    at Module._compile (node:internal/modules/cjs/loader:1734:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:28
+const result = await student.save()
+
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (node:internal/modules/cjs/loader:1691:18)
+    at Module._compile (node:internal/modules/cjs/loader:1734:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+(node:18556) Warning: Failed to load the ES module: C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+(Use `node --trace-warnings ...` to show where the warning was created)
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:28
+const result = await student.save()
+               ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at wrapSafe (node:internal/modules/cjs/loader:1691:18)
+    at Module._compile (node:internal/modules/cjs/loader:1734:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+^C
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index.js
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11
+    name:string,
+         ^
+
+ReferenceError: string is not defined
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:11:10)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index.js
+Connected to MongoDB...
+{
+  name: 'Johnny Somali',
+  email: 'johnnysomali@gmail.com',
+  phone: '7660377562',
+  _id: new ObjectId('6926d713c28f6dc160ac3515'),
+  __v: 0
+}
+^C
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index.js
+Connected to MongoDB...
+{
+  name: 'Johnny Somali',
+  email: 'johnnysomali1@gmail.com',
+  phone: '7660377562',
+  _id: new ObjectId('6926d74d8c8744196f525766'),
+  __v: 0
+}
+^C
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index.js
+Connected to MongoDB...
+^C
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index.js
+Connected to MongoDB...
+^C
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index.js
+Connected to MongoDB...
+{
+  name: 'Johnny Somali',
+  email: 'johnnysomali1@gmail.com',
+  phone: '7660377562',
+  _id: new ObjectId('6926d9dabe7067e11d5a03d8'),
+  __v: 0
+}
+^C
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index.js
+Connected to MongoDB...
+{
+  name: 'Johnny Somali',
+  email: 'johnnysomali1@gmail.com',
+  phone: '7660377562',
+  _id: new ObjectId('6926dace0bf0aa6d91147c22'),
+  __v: 0
+}
+^C
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index.js
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:25
+  const result = await Student.save()
+                               ^
+
+TypeError: Student.save is not a function
+    at createStudent (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:25:32)
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:30:1)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index.js
+Connected to MongoDB...
+{
+  name: 'Johnny Somali',
+  email: 'johnnysomali1@gmail.com',
+  phone: '7660377562',
+  _id: new ObjectId('6926db51e357f67b79c54097'),
+  __v: 0
+}
+^C
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index.js
+Connected to MongoDB...
+{
+  name: 'Johnny Somali',
+  email: 'johnnysomali1@gmail.com',
+  phone: '7660377562',
+  _id: new ObjectId('6926dc27bf9594e720dc383b'),
+  __v: 0
+}
+^C
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index.js
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:33
+    const courses = await students.find()
+                    ^
+
+ReferenceError: students is not defined
+    at getStudent (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:33:21)
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:37:1)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index.js
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:33
+    const courses = await student.find()
+                    ^
+
+ReferenceError: student is not defined
+    at getStudent (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:33:21)
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:37:1)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index.js
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:33
+    const courses = await students.find()
+                    ^
+
+ReferenceError: students is not defined
+    at getStudent (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:33:21)
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:37:1)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index.js
+Connected to MongoDB...
+{
+  name: 'Johnny Somali',
+  email: 'johnnysomali1@gmail.com',
+  phone: '7660377562',
+  _id: new ObjectId('6926dc8700e0f6f2d910f1ab'),
+  __v: 0
+}
+[
+  {
+    _id: new ObjectId('6926dace0bf0aa6d91147c22'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  },
+  {
+    _id: new ObjectId('6926db51e357f67b79c54097'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  },
+  {
+    _id: new ObjectId('6926dbb5cf049b9c9763b116'),
+    name: 'Rose Mary',
+    email: 'rosemary@gmail.com',
+    phone: '7440344563'
+  },
+  {
+    _id: new ObjectId('6926dbd2cf049b9c9763b117'),
+    name: 'Jack Daniels',
+    email: 'jackdaniels@gmail.com',
+    phone: '7550277362'
+  },
+  {
+    _id: new ObjectId('6926dc27bf9594e720dc383b'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  },
+  {
+    _id: new ObjectId('6926dc8700e0f6f2d910f1ab'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  }
+]
+^C
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index.js
+Connected to MongoDB...
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:41
+    const identity = (await Student.find({email:'johnnysomali1@gmail.com'}).limit(10)).sort({name:1,tags:1})
+                                                                                       ^
+
+TypeError: The comparison function must be either a function or undefined: #<Object>
+    at Array.sort (<anonymous>)
+    at setStudent (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index.js:41:88)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+Node.js v24.11.0
+
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index.js
+Connected to MongoDB...
+[
+  {
+    _id: new ObjectId('6926dace0bf0aa6d91147c22'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com'
+  },
+  {
+    _id: new ObjectId('6926db51e357f67b79c54097'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com'
+  },
+  {
+    _id: new ObjectId('6926dbb5cf049b9c9763b116'),
+    name: 'Rose Mary',
+    email: 'rosemary@gmail.com'
+  },
+  {
+    _id: new ObjectId('6926dbd2cf049b9c9763b117'),
+    name: 'Jack Daniels',
+    email: 'jackdaniels@gmail.com'
+  },
+  {
+    _id: new ObjectId('6926dc27bf9594e720dc383b'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com'
+  },
+  {
+    _id: new ObjectId('6926dc8700e0f6f2d910f1ab'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com'
+  }
+]
+{
+  name: 'Johnny Somali',
+  email: 'johnnysomali1@gmail.com',
+  phone: '7660377562',
+  _id: new ObjectId('6926e090c0545c59bc3e0137'),
+  __v: 0
+}
+[
+  {
+    _id: new ObjectId('6926dace0bf0aa6d91147c22'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  },
+  {
+    _id: new ObjectId('6926db51e357f67b79c54097'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  },
+  {
+    _id: new ObjectId('6926dbb5cf049b9c9763b116'),
+    name: 'Rose Mary',
+    email: 'rosemary@gmail.com',
+    phone: '7440344563'
+  },
+  {
+    _id: new ObjectId('6926dbd2cf049b9c9763b117'),
+    name: 'Jack Daniels',
+    email: 'jackdaniels@gmail.com',
+    phone: '7550277362'
+  },
+  {
+    _id: new ObjectId('6926dc27bf9594e720dc383b'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  },
+  {
+    _id: new ObjectId('6926dc8700e0f6f2d910f1ab'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  },
+  {
+    _id: new ObjectId('6926e090c0545c59bc3e0137'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  }
+]
+^C
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index.js
+Connected to MongoDB...
+{
+  name: 'Johnny Somali',
+  email: 'johnnysomali1@gmail.com',
+  phone: '7660377562',
+  _id: new ObjectId('6926e0afc0ab3780e9f30177'),
+  __v: 0
+}
+[
+  {
+    _id: new ObjectId('6926dace0bf0aa6d91147c22'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com'
+  },
+  {
+    _id: new ObjectId('6926db51e357f67b79c54097'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com'
+  },
+  {
+    _id: new ObjectId('6926dbb5cf049b9c9763b116'),
+    name: 'Rose Mary',
+    email: 'rosemary@gmail.com'
+  },
+  {
+    _id: new ObjectId('6926dbd2cf049b9c9763b117'),
+    name: 'Jack Daniels',
+    email: 'jackdaniels@gmail.com'
+  },
+  {
+    _id: new ObjectId('6926dc27bf9594e720dc383b'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com'
+  },
+  {
+    _id: new ObjectId('6926dc8700e0f6f2d910f1ab'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com'
+  },
+  {
+    _id: new ObjectId('6926e090c0545c59bc3e0137'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com'
+  },
+  {
+    _id: new ObjectId('6926e0afc0ab3780e9f30177'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com'
+  }
+]
+^C
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index.js
+Connected to MongoDB...
+{
+  name: 'Johnny Somali',
+  email: 'johnnysomali1@gmail.com',
+  phone: '7660377562',
+  _id: new ObjectId('6926e13a5533732b5a47ef7b'),
+  __v: 0
+}
+[
+  {
+    _id: new ObjectId('6926dbd2cf049b9c9763b117'),
+    name: 'Jack Daniels',
+    email: 'jackdaniels@gmail.com',
+    phone: '7550277362'
+  },
+  {
+    _id: new ObjectId('6926dace0bf0aa6d91147c22'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  },
+  {
+    _id: new ObjectId('6926db51e357f67b79c54097'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  },
+  {
+    _id: new ObjectId('6926dc27bf9594e720dc383b'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  },
+  {
+    _id: new ObjectId('6926dc8700e0f6f2d910f1ab'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  },
+  {
+    _id: new ObjectId('6926e090c0545c59bc3e0137'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  },
+  {
+    _id: new ObjectId('6926e0afc0ab3780e9f30177'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  },
+  {
+    _id: new ObjectId('6926e13a5533732b5a47ef7b'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  },
+  {
+    _id: new ObjectId('6926dbb5cf049b9c9763b116'),
+    name: 'Rose Mary',
+    email: 'rosemary@gmail.com',
+    phone: '7440344563'
+  }
+]
+^C
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index.js
+Connected to MongoDB...
+[
+  {
+    _id: new ObjectId('6926dbd2cf049b9c9763b117'),
+    name: 'Jack Daniels',
+    email: 'jackdaniels@gmail.com',
+    phone: '7550277362'
+  },
+  {
+    _id: new ObjectId('6926dace0bf0aa6d91147c22'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  },
+  {
+    _id: new ObjectId('6926db51e357f67b79c54097'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  },
+  {
+    _id: new ObjectId('6926dc27bf9594e720dc383b'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  },
+  {
+    _id: new ObjectId('6926dc8700e0f6f2d910f1ab'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  },
+  {
+    _id: new ObjectId('6926e090c0545c59bc3e0137'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  },
+  {
+    _id: new ObjectId('6926e0afc0ab3780e9f30177'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  },
+  {
+    _id: new ObjectId('6926e13a5533732b5a47ef7b'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  },
+  {
+    _id: new ObjectId('6926dbb5cf049b9c9763b116'),
+    name: 'Rose Mary',
+    email: 'rosemary@gmail.com',
+    phone: '7440344563'
+  }
+]
+^C
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index.js
+Connected to MongoDB...
+[
+  {
+    _id: new ObjectId('6926db51e357f67b79c54097'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  },
+  {
+    _id: new ObjectId('6926dbb5cf049b9c9763b116'),
+    name: 'Rose Mary',
+    email: 'rosemary@gmail.com',
+    phone: '7440344563'
+  },
+  {
+    _id: new ObjectId('6926dbd2cf049b9c9763b117'),
+    name: 'Jack Daniels',
+    email: 'jackdaniels@gmail.com',
+    phone: '7550277362'
+  },
+  {
+    _id: new ObjectId('6926dc27bf9594e720dc383b'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  },
+  {
+    _id: new ObjectId('6926dc8700e0f6f2d910f1ab'),
+    name: 'Johnny Somali',
+    email: 'johnnysomali1@gmail.com',
+    phone: '7660377562',
+    __v: 0
+  }
+]
+^C
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index1.js
+{
+  name: 'Johnny Sins',
+  author: 'Johnny Sins',
+  tags: 'Entertainment',
+  price: 10000,
+  isPublished: true,
+  _id: new ObjectId('6926e9b9cc4f622301dcb0a4')
+}
+Connected to MongoDB...
+^C
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index1.js
+{
+  name: 'Mia Malkova',
+  author: 'Mia Malkova',
+  tags: 'Erotica',
+  price: 20000,
+  isPublished: true,
+  _id: new ObjectId('6926e9fdd761a481fdaf2596')
+}
+Connected to MongoDB...
+^C
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index1.js
+Connected to MongoDB...
+[]
+^C
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index1.js
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index1.js:35
+    const users = await Users.find()
+                  ^
+
+ReferenceError: Users is not defined
+    at getUser (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index1.js:35:19)
+    at Object.<anonymous> (C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo\index1.js:39:1)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1480:32)
+    at Module._load (node:internal/modules/cjs/loader:1299:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.11.0
+
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index1.js
+{
+  name: 'Mia Malkova',
+  author: 'Mia Malkova',
+  tags: 'Erotica',
+  price: 20000,
+  isPublished: false,
+  _id: new ObjectId('6926eb549a368db617abcede')
+}
+{
+  name: 'Cage Match',
+  author: 'Johnny Cage',
+  tags: 'Martial Arts',
+  price: 30000,
+  isPublished: true,
+  _id: new ObjectId('6926eb549a368db617abcedf')
+}
+{
+  name: 'Cage Match',
+  author: 'Johnny Cage',
+  tags: 'Martial Arts',
+  price: 30000,
+  isPublished: true,
+  _id: new ObjectId('6926eb549a368db617abcee0')
+}
+Connected to MongoDB...
+[]
+^C
+C:\Users\SriniAchuthan\OneDrive\Desktop\Node.JS\first_app\mongo-demo>node index1.js
+Connected to MongoDB...
+{
+  name: 'Cage Match',
+  author: 'Johnny Cage',
+  tags: 'Martial Arts',
+  price: 30000,
+  isPublished: true,
+  _id: new ObjectId('6926ebb7adba28371ed6cb80'),
+  __v: 0
+}
+[
+  {
+    _id: new ObjectId('6926ebb7adba28371ed6cb80'),
+    name: 'Cage Match',
+    author: 'Johnny Cage',
+    tags: 'Martial Arts',
+    price: 30000,
+    isPublished: true,
+    __v: 0
+  }
+]
