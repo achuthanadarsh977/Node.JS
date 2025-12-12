@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Weather Database Dashboard</h1>
+
+<div class="form-container">
+    <h2>Add Weather Data</h2>
+    <form id="weatherForm">
+        <input type="text" id="country" placeholder="Country" required>
+        <input type="text" id="city" placeholder="City" required>
+        <input type="number" id="humidity" placeholder="Humidity" required>
+        <button type="submit">Add Weather</button>
+    </form>
+</div>
+
+<h2>Weather Records</h2>
+<div id="weatherList"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
