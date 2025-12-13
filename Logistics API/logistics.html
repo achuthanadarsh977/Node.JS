@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Logistics Order</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Create New Order</h1>
+  <div class="form-container">
+    <form id="createForm">
+      <input type="text" name="orderId" placeholder="Order ID" required>
+      <input type="text" name="customerName" placeholder="Customer Name" required>
+      <input type="text" name="customerPhone" placeholder="Customer Phone" required>
+      <input type="text" name="customerEmail" placeholder="Customer Email" required>
+      <input type="text" name="customerAddress" placeholder="Customer Address" required>
+      <input type="text" name="origin" placeholder="Origin" required>
+      <input type="text" name="destination" placeholder="Destination" required>
+      <input type="number" name="weight" placeholder="Weight (kg)" required>
+      <button type="submit">Save Order</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script src = "logistics.js">
+  </script>
+</body>
+</html>
