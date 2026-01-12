@@ -1,0 +1,178 @@
+
+test> use logistics
+switched to db logistics
+logistics> db.logistics.find()
+[
+  {
+    _id: ObjectId('693d4f591b00e9a79f427854'),
+    orderId: 'O1234',
+    customer: {
+      name: 'Godrej',
+      phone: '7660988111',
+      email: 'godrej@gmail.com',
+      address: 'Kanchipuram'
+    },
+    shipment: {
+      origin: 'Kanchipuram',
+      destination: 'Madurai',
+      weight: '23 kg',
+      dimensions: { length: 23, width: 34, height: 14 },
+      status: 'In Transit'
+    },
+    vehicle: { vehicleId: 'V1001', vehicletype: 'Truck', capacity: 120 },
+    driver: {
+      driverId: 'D1001',
+      name: 'Raj Venkatesh',
+      phone: '7880933451',
+      licenseNumber: 1235
+    },
+    createdAt: ISODate('2022-10-10T00:00:00.000Z'),
+    __v: 0
+  },
+  {
+    _id: ObjectId('693d504cfd6420b992c297d3'),
+    orderId: 'O4321',
+    customer: {
+      name: 'Vivanta',
+      phone: '7440688121',
+      email: 'vivanta@gmail.com',
+      address: 'Madurai'
+    },
+    shipment: {
+      origin: 'Madurai',
+      destination: 'Choolaimedu',
+      weight: '30 kg',
+      dimensions: { length: 30, width: 43, height: 20 },
+      status: 'Pending'
+    },
+    vehicle: { vehicleId: 'V1002', vehicletype: 'Van', capacity: 110 },
+    driver: {
+      driverId: 'D1012',
+      name: 'Matthew Davis',
+      phone: '7550277362',
+      licenseNumber: 1341
+    },
+    createdAt: ISODate('2023-12-12T00:00:00.000Z'),
+    __v: 0
+  },
+  {
+    _id: ObjectId('693d5167347f517d7c9afe16'),
+    orderId: 'O6789',
+    customer: {
+      name: 'Cargo Care',
+      phone: '7550277362',
+      email: 'cargocare@gmail.com',
+      address: 'Mailapur'
+    },
+    shipment: {
+      origin: 'Malaipur',
+      destination: 'Padoor',
+      weight: '40 kg',
+      dimensions: { length: 50, width: 40, height: 60 },
+      status: 'Delivered'
+    },
+    vehicle: { vehicleId: 'V1003', vehicletype: 'Bike', capacity: 50 },
+    driver: {
+      driverId: 'D113',
+      name: 'Roshan Sampson',
+      phone: '8550266762',
+      licenseNumber: 1400
+    },
+    createdAt: ISODate('2024-10-02T00:00:00.000Z'),
+    __v: 0
+  },
+  {
+    _id: ObjectId('693d659812650945ad401e55'),
+    shipment: { status: 'Pending' },
+    createdAt: ISODate('2025-12-13T13:09:44.972Z'),
+    __v: 0
+  }
+]
+logistics>
+(To exit, press Ctrl+C again or Ctrl+D or type .exit)
+logistics> db.logistics.find()
+[
+  {
+    _id: ObjectId('693d4f591b00e9a79f427854'),
+    orderId: 'O1234',
+    customer: {
+      name: 'Godrej',
+      phone: '7660988111',
+      email: 'godrej@gmail.com',
+      address: 'Kanchipuram'
+    },
+    shipment: {
+      origin: 'Kanchipuram',
+      destination: 'Madurai',
+      weight: '23 kg',
+      dimensions: { length: 23, width: 34, height: 14 },
+      status: 'In Transit'
+    },
+    vehicle: { vehicleId: 'V1001', vehicletype: 'Truck', capacity: 120 },
+    driver: {
+      driverId: 'D1001',
+      name: 'Raj Venkatesh',
+      phone: '7880933451',
+      licenseNumber: 1235
+    },
+    createdAt: ISODate('2022-10-10T00:00:00.000Z'),
+    __v: 0
+  },
+  {
+    _id: ObjectId('693d504cfd6420b992c297d3'),
+    orderId: 'O4321',
+    customer: {
+      name: 'Vivanta',
+      phone: '7440688121',
+      email: 'vivanta@gmail.com',
+      address: 'Madurai'
+    },
+    shipment: {
+      origin: 'Madurai',
+      destination: 'Choolaimedu',
+      weight: '30 kg',
+      dimensions: { length: 30, width: 43, height: 20 },
+      status: 'Pending'
+    },
+    vehicle: { vehicleId: 'V1002', vehicletype: 'Van', capacity: 110 },
+    driver: {
+      driverId: 'D1012',
+      name: 'Matthew Davis',
+      phone: '7550277362',
+      licenseNumber: 1341
+    },
+    createdAt: ISODate('2023-12-12T00:00:00.000Z'),
+    __v: 0
+  },
+  {
+    _id: ObjectId('693d5167347f517d7c9afe16'),
+    orderId: 'O6789',
+    customer: {
+      name: 'Cargo Care',
+      phone: '7550277362',
+      email: 'cargocare@gmail.com',
+      address: 'Mailapur'
+    },
+    shipment: {
+      origin: 'Malaipur',
+      destination: 'Padoor',
+      weight: '40 kg',
+      dimensions: { length: 50, width: 40, height: 60 },
+      status: 'Delivered'
+    },
+    vehicle: { vehicleId: 'V1003', vehicletype: 'Bike', capacity: 50 },
+    driver: {
+      driverId: 'D113',
+      name: 'Roshan Sampson',
+      phone: '8550266762',
+      licenseNumber: 1400
+    },
+    createdAt: ISODate('2024-10-02T00:00:00.000Z'),
+    __v: 0
+  },
+  {
+    _id: ObjectId('693d659812650945ad401e55'),
+    shipment: { status: 'Pending' },
+    createdAt: ISODate('2025-12-13T13:09:44.972Z'),
+    __v: 0
+  }
