@@ -1,0 +1,51 @@
+<%- include('../partials/header') %>
+
+<div class="d-flex justify-content-between mb-4 border-bottom pb-2">
+  <h2>Dashboard</h2>
+  <a href="/shipments/new" class="btn btn-success">+ Add Trip</a>
+</div>
+
+<h4>Shipment List</h4>
+
+<table class="table table-bordered table-striped text-nowrap">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Supplier</th>
+      <th>PAN</th>
+      <th>Trip ID</th>
+      <th>From</th>
+      <th>To</th>
+      <th>Vehicle</th>
+      <th>Freight ₹</th>
+      <th>Advance ₹</th>
+      <th>Balance ₹</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% shipments.forEach((s, i) => { %>
+      <tr>
+        <td><%= i + 1 %></td>
+        <td><%= s.supplierName %></td>
+        <td><%= s.pan %></td>
+        <td><%= s.tripId %></td>
+        <td><%= s.from %></td>
+        <td><%= s.to %></td>
+        <td><%= s.vehicleTypeTonnage %></td>
+        <td>₹<%= s.freight %></td>
+        <td>₹<%= s.totalAdvance %></td>
+        <td>₹<%= s.balance %></td>
+        <td>
+          <a href="/shipments/<%= s._id %>/edit" class="btn btn-sm btn-warning">Edit</a>
+          <form action="/shipments/<%= s._id %>?_method=DELETE" method="POST" class="d-inline">
+            <button class="btn btn-sm btn-danger">Delete</button>
+          </form>
+        </td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+<%- include('../partials/footer') %>

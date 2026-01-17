@@ -1,0 +1,83 @@
+<%- include('../partials/header') %>
+
+<h3 class="mb-4">Add New Shipment</h3>
+
+<form action="/shipments" method="POST">
+
+  <div class="row g-3">
+
+    <div class="col-md-4">
+      <label>Supplier Name</label>
+      <input type="text" name="supplierName" class="form-control" required>
+    </div>
+
+    <div class="col-md-4">
+      <label>PAN</label>
+      <input type="text" name="pan" class="form-control">
+    </div>
+
+    <div class="col-md-4">
+      <label>Trip ID</label>
+      <input type="text" name="tripId" class="form-control">
+    </div>
+
+    <div class="col-md-4">
+      <label>Trip Date</label>
+      <input type="date" name="tripDate" class="form-control">
+    </div>
+
+    <div class="col-md-4">
+      <label>Billing To</label>
+      <input type="text" name="billingTo" class="form-control">
+    </div>
+
+    <div class="col-md-4">
+      <label>From</label>
+      <input type="text" name="from" class="form-control">
+    </div>
+
+    <div class="col-md-4">
+      <label>To</label>
+      <input type="text" name="to" class="form-control">
+    </div>
+
+    <div class="col-md-4">
+      <label>Loading Date</label>
+      <input type="date" name="loadingDate" class="form-control">
+    </div>
+
+    <div class="col-md-4">
+      <label>Vehicle No</label>
+      <input type="text" name="vehicleNo" class="form-control">
+    </div>
+
+    <div class="col-md-4">
+      <label>Vehicle / Tonnage</label>
+      <input type="text" name="vehicleTypeTonnage" class="form-control">
+    </div>
+
+    <div class="col-md-4">
+      <label>Freight ₹</label>
+      <input type="number" name="freight" class="form-control">
+    </div>
+
+    <div class="col-md-4">
+      <label>Advance ₹</label>
+      <input type="number" name="advance" class="form-control">
+    </div>
+
+    <div class="col-md-4">
+      <label>Other ₹</label>
+      <input type="number" name="other" class="form-control">
+    </div>
+
+  </div>
+
+  <div class="mt-4">
+    <button class="btn btn-success">Save</button>
+    <a href="/shipments" class="btn btn-secondary">Cancel</a>
+  </div>
+
+</form>
+
+<%- include('../partials/footer') %>

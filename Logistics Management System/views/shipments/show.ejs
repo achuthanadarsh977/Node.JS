@@ -1,0 +1,19 @@
+<%- include('../partials/header') %>
+
+<h3 class="mb-4">Shipment Details</h3>
+
+<table class="table table-bordered w-75">
+  <tr><th>Supplier</th><td><%= shipment.supplierName %></td></tr>
+  <tr><th>PAN</th><td><%= shipment.pan %></td></tr>
+  <tr><th>Trip ID</th><td><%= shipment.tripId %></td></tr>
+  <tr><th>From</th><td><%= shipment.from %></td></tr>
+  <tr><th>To</th><td><%= shipment.to %></td></tr>
+  <tr><th>Vehicle</th><td><%= shipment.vehicleTypeTonnage %></td></tr>
+  <tr><th>Freight</th><td>₹<%= shipment.freight %></td></tr>
+  <tr><th>Total Advance</th><td>₹<%= shipment.totalAdvance %></td></tr>
+  <tr><th>Balance</th><td>₹<%= shipment.balance %></td></tr>
+</table>
+
+<a href="/shipments" class="btn btn-secondary">Back</a>
+
+<%- include('../partials/footer') %>
