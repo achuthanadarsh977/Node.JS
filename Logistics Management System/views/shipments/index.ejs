@@ -7,8 +7,8 @@
 
 <h4>Shipment List</h4>
 
-<table class="table table-bordered table-striped text-nowrap">
-  <thead>
+<table class="table table-bordered table-striped text-nowrap align-middle">
+  <thead class="table-dark">
     <tr>
       <th>#</th>
       <th>Supplier</th>
@@ -17,8 +17,10 @@
       <th>From</th>
       <th>To</th>
       <th>Vehicle</th>
+      <th>Vehicle No</th>
+      <th>Billing To</th>
       <th>Freight ₹</th>
-      <th>Advance ₹</th>
+      <th>Total Advance ₹</th>
       <th>Balance ₹</th>
       <th>Actions</th>
     </tr>
@@ -33,10 +35,20 @@
         <td><%= s.tripId %></td>
         <td><%= s.from %></td>
         <td><%= s.to %></td>
-        <td><%= s.vehicleTypeTonnage %></td>
+
+        <!-- ✅ Vehicle Type -->
+        <td><%= s.vehicleTypeTonnage || '-' %></td>
+
+        <!-- ✅ Vehicle Number -->
+        <td><%= s.vehicleNo || '-' %></td>
+
+        <!-- ✅ Billing To -->
+        <td><%= s.billingTo || '-' %></td>
+
         <td>₹<%= s.freight %></td>
         <td>₹<%= s.totalAdvance %></td>
         <td>₹<%= s.balance %></td>
+
         <td>
           <a href="/shipments/<%= s._id %>/edit" class="btn btn-sm btn-warning">Edit</a>
           <form action="/shipments/<%= s._id %>?_method=DELETE" method="POST" class="d-inline">
