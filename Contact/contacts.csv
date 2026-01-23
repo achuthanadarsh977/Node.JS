@@ -1,0 +1,21 @@
+name,phone_number,category,call_status,call_attempts,remarks
+Rajesh Kumar,9876543210,Transporter,Pending,0,New contact from Chennai region
+Priya Sharma,9876543211,Non-Transporter,Called,1,Requested callback next week
+Amit Patel,9876543212,Transporter,Interested,2,Interested in long-haul transport services
+Sunita Reddy,9876543213,Non-Transporter,Not Interested,1,Already has existing vendor
+Vijay Singh,9876543214,Transporter,Pending,0,Recommended by existing client
+Kavita Nair,9876543215,Non-Transporter,Called,3,Pricing discussion in progress
+Manoj Gupta,9876543216,Transporter,Interested,2,Wants to discuss fleet capacity
+Deepa Iyer,9876543217,Non-Transporter,Pending,0,Lead from website inquiry
+Ravi Menon,9876543218,Transporter,Called,1,Asked for service brochure
+Anita Das,9876543219,Non-Transporter,Not Interested,2,Budget constraints mentioned
+Suresh Rao,9876543220,Transporter,Interested,3,Negotiating contract terms
+Lakshmi Pillai,9876543221,Non-Transporter,Called,1,Scheduled meeting for next Monday
+Karthik Bose,9876543222,Transporter,Pending,0,Referred by Amit Patel
+Meena Joshi,9876543223,Non-Transporter,Interested,2,Interested in bulk transport services
+Arjun Verma,9876543224,Transporter,Called,1,Requested route availability information
+Pooja Desai,9876543225,Non-Transporter,Not Interested,1,Using in-house logistics
+Rahul Saxena,9876543226,Transporter,Interested,4,Ready to sign agreement
+Sneha Kapoor,9876543227,Non-Transporter,Called,2,Comparing quotes from vendors
+Ganesh Murthy,9876543228,Transporter,Pending,0,New registration from trade show
+Divya Agarwal,9876543229,Non-Transporter,Interested,1,Wants trial shipment first
