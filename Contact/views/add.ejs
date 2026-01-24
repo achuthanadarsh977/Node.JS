@@ -1,0 +1,24 @@
+
+<form method="POST" action="/add">
+  <input
+    type="text"
+    name="name"
+    placeholder="Name"
+    required
+  />
+
+  <input
+    type="text"
+    name="phone_number"
+    placeholder="Phone Number"
+    required
+  />
+
+  <select name="category" required>
+    <option value="">Select Category</option>
+    <option value="Transporter">Transporter</option>
+    <option value="Non-Transporter">Non-Transporter</option>
+  </select>
+
+  <button type="submit">Add Contact</button>
+</form>

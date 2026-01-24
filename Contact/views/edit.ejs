@@ -1,0 +1,23 @@
+
+
+<form method="POST" action="/edit/<%= contact._id %>">
+  <input name="name" value="<%= contact.name %>" />
+  <input name="phone_number" value="<%= contact.phone_number %>" />
+  <input name= "attempts" value="<%= contact.call_attempts %>" />
+
+  <select name="category">
+    <option <%= contact.category === 'Transporter' ? 'selected' : '' %>>Transporter</option>
+    <option <%= contact.category === 'Non-Transporter' ? 'selected' : '' %>>Non-Transporter</option>
+  </select>
+
+  <select name="call_status">
+    <option>Pending</option>
+    <option>Called</option>
+    <option>Interested</option>
+    <option>Not Interested</option>
+  </select>
+
+  <textarea name="remarks"><%= contact.remarks %></textarea>
+
+  <button type="submit">Update</button>
+</form>
