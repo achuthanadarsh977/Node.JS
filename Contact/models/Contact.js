@@ -1,5 +1,4 @@
 
-
 import mongoose from "mongoose"
 import express from "express"
 import Joi from "joi"
@@ -16,25 +15,42 @@ mongoose
 
 
 const contactSchema = new mongoose.Schema({
-    name:String,
-    phone:String,
-    category:{
-        type:String,
-        enum:['Transporter' , 'Non-Transporter']
-    },
+  name: {
+    type: String,
+    required: true,
+    trim: true
+  },
+  phone_number: {
+    type: String,
+    required: true,
+    unique: true,
+    trim: true
+  },
+  category: {
+    type: String,
+    enum: ['Transporter', 'Non-Transporter'],
+    required: true
+  },
+  call_status: {
+    type: String,
+    enum: ['Pending', 'Called', 'Interested', 'Not Interested'],
+    default: 'Pending'
+  },
+  call_attempts: {
+    type: Number,
+    default: 0,
+    min: 0
+  },
+  remarks: {
+    type: String,
+    default: '',
+    trim: true
+  }
+}, {
+  timestamps: true
+});
 
-    callStatus:{
-        type:String,
-        default:'Pending'
-    },
 
-    ivrResponse:String,
-
-    leadType:{
-        type:String,
-        enum:['HOT','COLD','WARM','NONE']
-    }
-}) 
 
 
 const contacts = mongoose.model("Contacts" , contactSchema)
