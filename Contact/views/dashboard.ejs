@@ -1,25 +1,29 @@
+<h1 style="text-align:center">Contact Management System</h1>
 
-<%- include('layout', { body: null }) %>
+<div style="text-align:center; margin: 20px;">
+  <a href="/add">➕ Add Contact</a>
+</div>
 
-<table>
+<table border="1" cellpadding="10">
   <tr>
     <th>Name</th>
     <th>Phone</th>
     <th>Category</th>
-    <th>Lead</th>
     <th>Status</th>
-    <th>Action</th>
+    <th>Attempts</th>
+    <th>Actions</th>
   </tr>
 
   <% contacts.forEach(c => { %>
-    <tr class="<%= c.leadType.toLowerCase() %>">
+    <tr>
       <td><%= c.name %></td>
-      <td><%= c.phone %></td>
+      <td><%= c.phone_number %></td>
       <td><%= c.category %></td>
-      <td><%= c.leadType %></td>
-      <td><%= c.callStatus %></td>
+      <td><%= c.call_status %></td>
+      <td><%= c.call_attempts %></td>
       <td>
-        <a href="/dashboard/delete/<%= c._id %>">❌</a>
+        <a href="/edit/<%= c._id %>">✏️Edit</a>
+        <a href="/delete/<%= c._id %>">🗑Delete</a>
       </td>
     </tr>
   <% }) %>
