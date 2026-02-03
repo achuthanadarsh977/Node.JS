@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %> - Logistics Manager</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <%- include('../partials/sidebar') %>
+
+    <main class="main-content">
+      <%- include('../partials/header') %>
+      <%- include('../partials/alerts') %>
+
+      <div class="section-header" style="margin-bottom: 20px;">
+        <h2 class="section-title">Shipment Details - <%= shipment.shipmentId %></h2>
+        <div>
+          <a href="/shipments/<%= shipment._id %>/edit" class="btn btn-secondary">Edit</a>
+          <a href="/shipments" class="btn btn-secondary">Back to List</a>
+        </div>
+      </div>
+
+      <div class="section">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+          <div>
+            <p><strong>Tracking Number:</strong> <%= shipment.trackingNumber %></p>
+            <p><strong>Service Type:</strong> <%= shipment.serviceType %></p>
+          </div>
+          <span class="status-badge <%= shipment.status.toLowerCase().replace(' ', '-') %>" style="font-size: 16px; padding: 8px 20px;">
+            <%= shipment.status %>
+          </span>
+        </div>
+
+        <div class="form-row-2">
+          <div>
+            <h3 class="form-section-title">Sender Information</h3>
+            <p><strong>Name:</strong> <%= shipment.sender.name %></p>
+            <p><strong>Email:</strong> <%= shipment.sender.email %></p>
+            <p><strong>Phone:</strong> <%= shipment.sender.phone %></p>
+            <p><strong>Address:</strong><br>
+              <%= shipment.sender.addressLine1 %><br>
+              <% if (shipment.sender.addressLine2) { %><%= shipment.sender.addressLine2 %><br><% } %>
+              <%= shipment.sender.city %>, <%= shipment.sender.state %> <%= shipment.sender.postalCode %><br>
+              <%= shipment.sender.country %>
+            </p>
+          </div>
+          <div>
+            <h3 class="form-section-title">Recipient Information</h3>
+            <p><strong>Name:</strong> <%= shipment.recipient.name %></p>
+            <p><strong>Email:</strong> <%= shipment.recipient.email %></p>
+            <p><strong>Phone:</strong> <%= shipment.recipient.phone %></p>
+            <p><strong>Address:</strong><br>
+              <%= shipment.recipient.addressLine1 %><br>
+              <% if (shipment.recipient.addressLine2) { %><%= shipment.recipient.addressLine2 %><br><% } %>
+              <%= shipment.recipient.city %>, <%= shipment.recipient.state %> <%= shipment.recipient.postalCode %><br>
+              <%= shipment.recipient.country %>
+            </p>
+          </div>
+        </div>
+
+        <h3 class="form-section-title">Shipment Details</h3>
+        <div class="form-row">
+          <div>
+            <p><strong>Weight:</strong> <%= shipment.weight %> kg</p>
+          </div>
+          <div>
+            <p><strong>Dimensions:</strong> <%= shipment.dimensions || 'N/A' %></p>
+          </div>
+          <div>
+            <p><strong>Delivery Date:</strong> <%= shipment.deliveryDate ? new Date(shipment.deliveryDate).toLocaleDateString() : 'N/A' %></p>
+          </div>
+        </div>
+
+        <% if (shipment.originWarehouse || shipment.destinationWarehouse) { %>
+          <h3 class="form-section-title">Warehouse Information</h3>
+          <div class="form-row-2">
+            <div>
+              <p><strong>Origin Warehouse:</strong> <%= shipment.originWarehouse || 'N/A' %></p>
+            </div>
+            <div>
+              <p><strong>Destination Warehouse:</strong> <%= shipment.destinationWarehouse || 'N/A' %></p>
+            </div>
+          </div>
+        <% } %>
+
+        <% if (shipment.notes) { %>
+          <h3 class="form-section-title">Notes</h3>
+          <p><%= shipment.notes %></p>
+        <% } %>
+
+        <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #e0e0e0; color: #666; font-size: 13px;">
+          <p>Created: <%= new Date(shipment.createdAt).toLocaleString() %></p>
+          <p>Last Updated: <%= new Date(shipment.updatedAt).toLocaleString() %></p>
+        </div>
+      </div>
+
+      <%- include('../partials/footer') %>
+    </main>
+  </div>
+</body>
+</html>
