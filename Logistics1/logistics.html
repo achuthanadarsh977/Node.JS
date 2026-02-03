@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Logistics Manager Dashboard</title>
+
+<style>
+/* ===== GLOBAL ===== */
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background:#f5f7fa;
+  color:#1f2937;
+}
+.container { display:flex; min-height:100vh; }
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width:240px;
+  background:#fff;
+  border-right:1px solid #e5e7eb;
+  padding:20px 0;
+}
+.logo {
+  display:flex; align-items:center; gap:10px;
+  padding:0 20px 30px;
+  font-size:20px; font-weight:600; color:#2563eb;
+}
+.logo-icon {
+  width:32px; height:32px; border-radius:8px;
+  background:#2563eb; color:#fff;
+  display:flex; align-items:center; justify-content:center;
+}
+.nav-item {
+  padding:12px 20px;
+  display:flex; gap:12px;
+  cursor:pointer;
+  color:#6b7280;
+}
+.nav-item.active, .nav-item:hover {
+  background:#f3f4f6; color:#2563eb;
+}
+
+/* ===== MAIN ===== */
+.main-content { flex:1; padding:30px 40px; }
+.header {
+  display:flex; justify-content:space-between; align-items:center;
+  margin-bottom:25px;
+}
+.header h1 { font-size:26px; }
+.user-avatar {
+  width:40px; height:40px;
+  border-radius:50%;
+  background:#e5e7eb;
+  display:flex; align-items:center; justify-content:center;
+}
+
+/* ===== CARDS ===== */
+.section {
+  background:#fff;
+  border-radius:12px;
+  padding:24px;
+  box-shadow:0 1px 3px rgba(0,0,0,.08);
+  margin-bottom:30px;
+}
+.section-title { font-size:20px; font-weight:600; }
+
+/* ===== TABLE ===== */
+table { width:100%; border-collapse:collapse; }
+thead { background:#f9fafb; }
+th {
+  padding:12px;
+  font-size:12px;
+  text-transform:uppercase;
+  color:#6b7280;
+  text-align:left;
+}
+td {
+  padding:14px 12px;
+  border-top:1px solid #e5e7eb;
+  font-size:14px;
+  white-space:nowrap;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  padding:8px 14px;
+  border-radius:6px;
+  border:none;
+  cursor:pointer;
+  font-size:13px;
+}
+.btn-primary { background:#2563eb; color:white; }
+.btn-edit { background:#f59e0b; color:white; }
+.btn-delete { background:#dc2626; color:white; }
+
+/* ===== MODAL ===== */
+.modal {
+  display:none;
+  position:fixed; inset:0;
+  background:rgba(0,0,0,.5);
+  justify-content:center; align-items:center;
+}
+.modal.active { display:flex; }
+.modal-content {
+  background:white;
+  padding:28px;
+  border-radius:12px;
+  width:600px;
+}
+.form-group { margin-bottom:14px; }
+label { font-size:13px; color:#374151; display:block; margin-bottom:6px; }
+input, select {
+  width:100%;
+  padding:10px;
+  border-radius:6px;
+  border:1px solid #d1d5db;
+}
+.form-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.hidden { display:none; }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <div class="logo">
+    <div class="logo-icon">🚚</div>
+    Logistics Manager
+  </div>
+  <div class="nav-item active">Dashboard</div>
+  <div class="nav-item">Shipments</div>
+  <div class="nav-item">Settings</div>
+</div>
+
+<!-- MAIN -->
+<div class="main-content">
+
+<div class="header">
+  <h1>Dashboard</h1>
+  <div class="user-avatar">U</div>
+</div>
+
+<!-- RECENT SHIPMENTS -->
+<div class="section">
+<h2 class="section-title">Recent Shipments</h2>
+
+<table>
+<thead>
+<tr>
+  <th>#</th>
+  <th>Supplier</th>
+  <th>PAN</th>
+  <th>Trip ID</th>
+  <th>From</th>
+  <th>To</th>
+  <th>Vehicle</th>
+  <th>Vehicle No</th>
+  <th>Billing To</th>
+  <th>Freight ₹</th>
+  <th>Advance ₹</th>
+  <th>Balance ₹</th>
+  <th>Actions</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+  <td>1</td>
+  <td>ABC Logistics</td>
+  <td>ABCDE1234F</td>
+  <td>TRIP001</td>
+  <td>Chennai</td>
+  <td>Bangalore</td>
+  <td>Truck</td>
+  <td>TN01AB1234</td>
+  <td>Flipkart</td>
+  <td>₹25,000</td>
+  <td>₹10,000</td>
+  <td>₹15,000</td>
+  <td>
+    <button class="btn btn-edit">Edit</button>
+    <button class="btn btn-delete">Delete</button>
+  </td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
