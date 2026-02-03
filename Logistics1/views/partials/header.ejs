@@ -1,0 +1,16 @@
+<header class="header">
+  <div class="header-logo">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2196F3" stroke-width="2">
+      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+    </svg>
+    <h1>Logistics Manager</h1>
+  </div>
+
+  <div class="header-user">
+    <% if (user) { %>
+      <span><%= user.name %></span>
+    <% } %>
+    <img src="https://ui-avatars.com/api/?name=<%= user ? user.name : 'User' %>&background=random" alt="User">
+  </div>
+</header>
