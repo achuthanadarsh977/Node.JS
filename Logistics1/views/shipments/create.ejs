@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %> - Logistics Manager</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <%- include('../partials/sidebar') %>
+
+    <main class="main-content">
+      <%- include('../partials/header') %>
+      <%- include('../partials/alerts') %>
+
+      <div class="section">
+        <h2 class="section-title"><%= shipment ? 'Edit' : 'Create' %>/Edit Shipment</h2>
+
+        <form action="<%= shipment ? '/shipments/' + shipment._id + '?_method=PUT' : '/shipments' %>" method="POST">
+
+          <!-- Shipment Details -->
+          <h3 class="form-section-title">Shipment Details</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Status</label>
+              <select name="status" class="form-control" required>
+                <option value="Pending" <%= shipment && shipment.status === 'Pending' ? 'selected' : '' %>>Pending</option>
+                <option value="In Transit" <%= shipment && shipment.status === 'In Transit' ? 'selected' : '' %>>In Transit</option>
+                <option value="Delivered" <%= shipment && shipment.status === 'Delivered' ? 'selected' : '' %>>Delivered</option>
+                <option value="Delayed" <%= shipment && shipment.status === 'Delayed' ? 'selected' : '' %>>Delayed</option>
+                <option value="Cancelled" <%= shipment && shipment.status === 'Cancelled' ? 'selected' : '' %>>Cancelled</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Weight (kg)</label>
+              <input type="number" step="0.1" name="weight" class="form-control" placeholder="15.2" value="<%= shipment ? shipment.weight : '' %>" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Dimensions (LxWxH cm)</label>
+              <input type="text" name="dimensions" class="form-control" placeholder="60x40x30 cm" value="<%= shipment ? shipment.dimensions : '' %>">
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label class="form-label">Tracking Number</label>
+              <input type="text" class="form-control" placeholder="Auto-generated" value="<%= shipment ? shipment.trackingNumber : '' %>" disabled>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Service Type</label>
+              <select name="serviceType" class="form-control">
+                <option value="Standard" <%= shipment && shipment.serviceType === 'Standard' ? 'selected' : '' %>>Standard</option>
+                <option value="Express" <%= shipment && shipment.serviceType === 'Express' ? 'selected' : '' %>>Express</option>
+                <option value="Overnight" <%= shipment && shipment.serviceType === 'Overnight' ? 'selected' : '' %>>Overnight</option>
+                <option value="Economy" <%= shipment && shipment.serviceType === 'Economy' ? 'selected' : '' %>>Economy</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Sender Information -->
+          <h3 class="form-section-title">Sender Information</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Name</label>
+              <input type="text" name="senderName" class="form-control" placeholder="Alice Johnson" value="<%= shipment ? shipment.sender.name : '' %>" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input type="email" name="senderEmail" class="form-control" placeholder="alice.j@example.com" value="<%= shipment ? shipment.sender.email : '' %>" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone</label>
+              <input type="text" name="senderPhone" class="form-control" placeholder="+1 (555) 987-65" value="<%= shipment ? shipment.sender.phone : '' %>" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Address Line 1</label>
+              <input type="text" name="senderAddressLine1" class="form-control" placeholder="789 Oak Ave" value="<%= shipment ? shipment.sender.addressLine1 : '' %>" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Address Line 2 (Optional)</label>
+              <input type="text" name="senderAddressLine2" class="form-control" placeholder="Suite 200" value="<%= shipment ? shipment.sender.addressLine2 : '' %>">
+            </div>
+            <div class="form-group">
+              <label class="form-label">City</label>
+              <input type="text" name="senderCity" class="form-control" placeholder="Los Angeles" value="<%= shipment ? shipment.sender.city : '' %>" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">State/Province</label>
+              <input type="text" name="senderState" class="form-control" placeholder="CA" value="<%= shipment ? shipment.sender.state : '' %>" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Postal Code</label>
+              <input type="text" name="senderPostalCode" class="form-control" placeholder="90001" value="<%= shipment ? shipment.sender.postalCode : '' %>" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Country</label>
+              <select name="senderCountry" class="form-control" required>
+                <option value="United States" <%= shipment && shipment.sender.country === 'United States' ? 'selected' : '' %>>United States</option>
+                <option value="United Kingdom" <%= shipment && shipment.sender.country === 'United Kingdom' ? 'selected' : '' %>>United Kingdom</option>
+                <option value="Canada" <%= shipment && shipment.sender.country === 'Canada' ? 'selected' : '' %>>Canada</option>
+                <option value="Australia" <%= shipment && shipment.sender.country === 'Australia' ? 'selected' : '' %>>Australia</option>
+                <option value="Germany" <%= shipment && shipment.sender.country === 'Germany' ? 'selected' : '' %>>Germany</option>
+                <option value="France" <%= shipment && shipment.sender.country === 'France' ? 'selected' : '' %>>France</option>
+                <option value="Japan" <%= shipment && shipment.sender.country === 'Japan' ? 'selected' : '' %>>Japan</option>
+                <option value="China" <%= shipment && shipment.sender.country === 'China' ? 'selected' : '' %>>China</option>
+                <option value="India" <%= shipment && shipment.sender.country === 'India' ? 'selected' : '' %>>India</option>
+                <option value="Brazil" <%= shipment && shipment.sender.country === 'Brazil' ? 'selected' : '' %>>Brazil</option>
+                <option value="UAE" <%= shipment && shipment.sender.country === 'UAE' ? 'selected' : '' %>>UAE</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Recipient Information -->
+          <h3 class="form-section-title">Recipient Information</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Name</label>
+              <input type="text" name="recipientName" class="form-control" placeholder="Bob Williams" value="<%= shipment ? shipment.recipient.name : '' %>" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input type="email" name="recipientEmail" class="form-control" placeholder="bob.w@example.com" value="<%= shipment ? shipment.recipient.email : '' %>" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone</label>
+              <input type="text" name="recipientPhone" class="form-control" placeholder="+1 (555) 234-56" value="<%= shipment ? shipment.recipient.phone : '' %>" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Address Line 1</label>
+              <input type="text" name="recipientAddressLine1" class="form-control" placeholder="101 Pine Ln" value="<%= shipment ? shipment.recipient.addressLine1 : '' %>" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Address Line 2 (Optional)</label>
+              <input type="text" name="recipientAddressLine2" class="form-control" placeholder="Unit 10" value="<%= shipment ? shipment.recipient.addressLine2 : '' %>">
+            </div>
+            <div class="form-group">
+              <label class="form-label">City</label>
+              <input type="text" name="recipientCity" class="form-control" placeholder="Houston" value="<%= shipment ? shipment.recipient.city : '' %>" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">State/Province</label>
+              <input type="text" name="recipientState" class="form-control" placeholder="TX" value="<%= shipment ? shipment.recipient.state : '' %>" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Postal Code</label>
+              <input type="text" name="recipientPostalCode" class="form-control" placeholder="77001" value="<%= shipment ? shipment.recipient.postalCode : '' %>" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Country</label>
+              <select name="recipientCountry" class="form-control" required>
+                <option value="United States" <%= shipment && shipment.recipient.country === 'United States' ? 'selected' : '' %>>United States</option>
+                <option value="United Kingdom" <%= shipment && shipment.recipient.country === 'United Kingdom' ? 'selected' : '' %>>United Kingdom</option>
+                <option value="Canada" <%= shipment && shipment.recipient.country === 'Canada' ? 'selected' : '' %>>Canada</option>
+                <option value="Australia" <%= shipment && shipment.recipient.country === 'Australia' ? 'selected' : '' %>>Australia</option>
+                <option value="Germany" <%= shipment && shipment.recipient.country === 'Germany' ? 'selected' : '' %>>Germany</option>
+                <option value="France" <%= shipment && shipment.recipient.country === 'France' ? 'selected' : '' %>>France</option>
+                <option value="Japan" <%= shipment && shipment.recipient.country === 'Japan' ? 'selected' : '' %>>Japan</option>
+                <option value="China" <%= shipment && shipment.recipient.country === 'China' ? 'selected' : '' %>>China</option>
+                <option value="India" <%= shipment && shipment.recipient.country === 'India' ? 'selected' : '' %>>India</option>
+                <option value="Brazil" <%= shipment && shipment.recipient.country === 'Brazil' ? 'selected' : '' %>>Brazil</option>
+                <option value="UAE" <%= shipment && shipment.recipient.country === 'UAE' ? 'selected' : '' %>>UAE</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Logistics Details -->
+          <h3 class="form-section-title">Logistics Details</h3>
+          <div class="form-row-2">
+            <div class="form-group">
+              <label class="form-label">Origin Warehouse</label>
+              <input type="text" name="originWarehouse" class="form-control" placeholder="LA Distribution Center" value="<%= shipment ? shipment.originWarehouse : '' %>">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Destination Warehouse</label>
+              <input type="text" name="destinationWarehouse" class="form-control" placeholder="Houston Depot" value="<%= shipment ? shipment.destinationWarehouse : '' %>">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Planned Delivery Date</label>
+            <input type="date" name="deliveryDate" class="form-control" value="<%= shipment && shipment.deliveryDate ? new Date(shipment.deliveryDate).toISOString().split('T')[0] : '' %>">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Notes</label>
+            <textarea name="notes" class="form-control" placeholder="Fragile items, handle with care. Deliver after 10 AM."><%= shipment ? shipment.notes : '' %></textarea>
+          </div>
+
+          <div class="form-actions">
+            <a href="/shipments" class="btn btn-secondary">Cancel</a>
+            <button type="submit" class="btn btn-primary">Save Shipment</button>
+          </div>
+        </form>
+      </div>
+
+      <%- include('../partials/footer') %>
+    </main>
+  </div>
+</body>
+</html>
