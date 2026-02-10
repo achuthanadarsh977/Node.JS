@@ -1,0 +1,35 @@
+<%- include('../partials/nav-loggedin') %>
+<%- include('../partials/alerts') %>
+
+<div class="container">
+  <h3>Edit contact</h3>
+  <form action="/contacts/edit/<%= contact._id %>" method="POST">
+    <div class="form-grid">
+      <div class="form-col">
+        <h5>Name</h5>
+        <input type="text" name="fullname" placeholder="Add a name" maxlength="50" value="<%= contact.fullname %>" />
+        <h5>Phone</h5>
+        <input type="text" name="phone" placeholder="Add a phone number" maxlength="20" value="<%= contact.phone %>" />
+        <h5>Email</h5>
+        <input type="text" name="email" placeholder="Add an email" maxlength="50" value="<%= contact.email %>" />
+        <h5>Address</h5>
+        <input type="text" name="address" placeholder="Add an address" value="<%= contact.address %>" />
+      </div>
+      <div class="form-col">
+        <h5>Company</h5>
+        <input type="text" name="company" placeholder="Add a Company" maxlength="100" value="<%= contact.company %>" />
+        <h5>Job Title</h5>
+        <input type="text" name="jobtitle" placeholder="Add a Job Title" maxlength="100" value="<%= contact.jobtitle %>" />
+        <h5>Website</h5>
+        <label class="small-label">Format: http://example.com (no www)</label>
+        <input type="text" name="website" placeholder="Add a Website" maxlength="100" value="<%= contact.website %>" />
+        <div class="form-actions">
+          <input type="submit" value="SAVE" class="btn btn-primary" />
+          <a href="/contacts" class="btn btn-secondary">CANCEL</a>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<%- include('../partials/footer') %>

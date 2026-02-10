@@ -1,0 +1,78 @@
+<%- include('../partials/nav-loggedin') %>
+<%- include('../partials/alerts') %>
+
+<div class="container">
+  <div class="row space-between">
+    <a href="/contacts/edit/<%= contact._id %>" class="btn btn-primary">Edit</a>
+    <form action="/contacts/delete" method="POST" style="display:inline;">
+      <input type="hidden" name="id" value="<%= contact._id %>" />
+      <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this contact?')">Delete</button>
+    </form>
+  </div>
+
+  <div class="contact-detail">
+    <div class="form-grid">
+      <div class="form-col">
+        <h5 class="label-red">Full Name:</h5>
+        <% if (contact.fullname) { %>
+          <h4><strong><%= contact.fullname %></strong></h4>
+        <% } else { %>
+          <p>---</p>
+        <% } %>
+
+        <h5 class="label-red">Phone Number</h5>
+        <% if (contact.phone) { %>
+          <% contact.phone.split(',').forEach(p => { %>
+            <p><%= p.trim() %></p>
+          <% }) %>
+        <% } else { %>
+          <p>---</p>
+        <% } %>
+
+        <h5 class="label-red">Address</h5>
+        <p><%= contact.address || '---' %></p>
+
+        <h5 class="label-red">Groups</h5>
+        <% if (groups.length > 0) { %>
+          <% groups.forEach(g => { %>
+            <p><a href="/groups/view/<%= g._id %>"><%= g.name %></a></p>
+          <% }) %>
+        <% } else { %>
+          <p>No group</p>
+        <% } %>
+      </div>
+
+      <div class="form-col">
+        <h5 class="label-red">Email</h5>
+        <% if (contact.email) { %>
+          <% contact.email.split(',').forEach(e => { %>
+            <p><%= e.trim() %></p>
+          <% }) %>
+        <% } else { %>
+          <p>---</p>
+        <% } %>
+
+        <h5 class="label-red">Company</h5>
+        <p><%= contact.company || '---' %></p>
+
+        <h5 class="label-red">Job title</h5>
+        <p><%= contact.jobtitle || '---' %></p>
+
+        <h5 class="label-red">Website</h5>
+        <% if (contact.website) { %>
+          <p><a href="<%= contact.website %>" target="_blank"><%= contact.website %></a></p>
+        <% } else { %>
+          <p>---</p>
+        <% } %>
+
+        <h5>Date created</h5>
+        <p><%= contact.createdAt ? contact.createdAt.toLocaleDateString() : '---' %></p>
+
+        <h5>Last modified</h5>
+        <p><%= contact.updatedAt ? contact.updatedAt.toLocaleDateString() : '---' %></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>

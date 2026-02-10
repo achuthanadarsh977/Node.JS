@@ -1,0 +1,63 @@
+<%- include('../partials/nav-loggedin') %>
+<%- include('../partials/alerts') %>
+
+<div class="container">
+  <div class="row space-between">
+    <div>&nbsp;</div>
+    <a href="/contacts/add" class="btn btn-success">Add contact</a>
+  </div>
+
+  <div class="row counts-bar">
+    <span>Contacts (<%= activeCount %>)</span>
+    <span><a href="/contacts/trash">Trash (<%= trashCount %>)</a></span>
+  </div>
+
+  <% if (contacts.length > 0) { %>
+    <form action="" method="POST" name="checkboxesform" id="contactsForm">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th width="3%"></th>
+            <th width="23%">Name</th>
+            <th width="17%">Phone</th>
+            <th width="22%">Email</th>
+            <th width="35%">Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% contacts.forEach(c => { %>
+            <tr>
+              <td><input type="checkbox" name="checkbox" value="<%= c._id %>" /></td>
+              <td><a href="/contacts/view/<%= c._id %>"><%= c.fullname.length > 20 ? c.fullname.substring(0,20) + '...' : c.fullname %></a></td>
+              <td><a href="/contacts/view/<%= c._id %>"><%= c.phone ? (c.phone.length > 15 ? c.phone.substring(0,15) + '...' : c.phone) : '----' %></a></td>
+              <td><a href="/contacts/view/<%= c._id %>"><%= c.email ? (c.email.length > 20 ? c.email.substring(0,20) + '...' : c.email) : '----' %></a></td>
+              <td><a href="/contacts/view/<%= c._id %>"><%= c.address ? (c.address.length > 40 ? c.address.substring(0,40) + '...' : c.address) : '----' %></a></td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+
+      <div class="row actions-bar">
+        <button type="submit" formaction="/contacts/bulk-delete" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete the selected contacts?')">Delete</button>
+
+        <% if (groups.length > 0) { %>
+          <select name="group_id" class="dropdown">
+            <option value="">-- Select group --</option>
+            <% groups.forEach(g => { %>
+              <option value="<%= g._id %>"><%= g.name %></option>
+            <% }) %>
+          </select>
+          <button type="submit" formaction="/contacts/bulk-move" class="btn btn-primary">Move</button>
+        <% } %>
+
+        <label class="select-all-label">
+          <input type="checkbox" id="selectAll" /> Select all
+        </label>
+      </div>
+    </form>
+  <% } else { %>
+    <p class="notify-box">No contacts yet. Click Add contact to start adding contacts.</p>
+  <% } %>
+</div>
+
+<%- include('../partials/footer') %>

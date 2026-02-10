@@ -1,0 +1,18 @@
+<%- include('../partials/nav-public') %>
+<%- include('../partials/alerts') %>
+
+<div class="container">
+  <div class="form-card">
+    <h3>Create a FREE account.</h3>
+    <form action="/signup" method="POST">
+      <fieldset>
+        <label>Email</label>
+        <input type="text" placeholder="Enter email" required name="email" />
+        <label>Password <span class="small-red">Min. 6 characters</span></label>
+        <input type="password" placeholder="Enter password" required name="pass" maxlength="20" />
+        <input type="submit" value="CREATE FREE ACCOUNT" class="btn btn-primary" />
+      </fieldset>
+    </form>
+    <p>Returning user? <a href="/signin">Sign in</a></p>
+  </div>
+</div>

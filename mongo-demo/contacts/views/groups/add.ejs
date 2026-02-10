@@ -1,0 +1,18 @@
+<%- include('../partials/nav-loggedin') %>
+<%- include('../partials/alerts') %>
+
+<div class="container">
+  <h2>Add a group</h2>
+  <div class="form-card">
+    <form method="POST" action="/groups/add">
+      <h5>Group Name:</h5>
+      <input type="text" name="group_name" maxlength="100" />
+      <h5>Description:</h5>
+      <input type="text" name="group_description" maxlength="200" />
+      <p><input type="submit" value="Add group" class="btn btn-primary" /></p>
+    </form>
+    <a href="/groups" class="btn btn-secondary">Go to groups</a>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>

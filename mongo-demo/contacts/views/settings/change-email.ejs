@@ -1,0 +1,16 @@
+<%- include('../partials/nav-loggedin') %>
+<%- include('../partials/alerts') %>
+
+<div class="container">
+  <div class="form-card">
+    <h3>Change Email</h3>
+    <form method="POST" action="/settings/change-email">
+      <label>Email</label>
+      <input type="text" name="email" maxlength="50" value="<%= user.email %>" />
+      <p><input type="submit" value="SAVE" class="btn btn-primary" /></p>
+    </form>
+    <a href="/settings" class="btn btn-secondary">Back to Settings</a>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>

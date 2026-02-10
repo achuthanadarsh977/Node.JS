@@ -1,0 +1,46 @@
+<%- include('../partials/nav-loggedin') %>
+<%- include('../partials/alerts') %>
+
+<div class="container">
+  <a href="/groups/add" class="btn btn-success">Add group</a>
+  <h4>Groups</h4>
+  <label>Use groups to keep related contacts together.</label>
+
+  <% if (groups.length > 0) { %>
+    <form action="/groups/delete" method="POST" name="checkboxesform">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th width="3%"></th>
+            <th width="5%">S/N</th>
+            <th width="40%">Group name</th>
+            <th width="25%">Contacts</th>
+            <th width="27%">Date created</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% groups.forEach((g, i) => { %>
+            <tr>
+              <td><input type="checkbox" name="checkbox" value="<%= g._id %>" /></td>
+              <td><a href="/groups/view/<%= g._id %>"><%= i + 1 %></a></td>
+              <td><a href="/groups/view/<%= g._id %>"><%= g.name %></a></td>
+              <td><a href="/groups/view/<%= g._id %>"><%= g.contactCount %></a></td>
+              <td><a href="/groups/view/<%= g._id %>"><%= g.createdAt ? new Date(g.createdAt).toLocaleDateString() : '---' %></a></td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+
+      <div class="row actions-bar">
+        <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete the selected groups?')">Delete</button>
+        <label class="select-all-label">
+          <input type="checkbox" id="selectAll" /> Select all
+        </label>
+      </div>
+    </form>
+  <% } else { %>
+    <p class="notify-box">You have not added any group. Click <a href="/groups/add">Add group</a> to add a new group.</p>
+  <% } %>
+</div>
+
+<%- include('../partials/footer') %>

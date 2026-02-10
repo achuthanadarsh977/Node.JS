@@ -1,0 +1,18 @@
+<%- include('../partials/nav-public') %>
+<%- include('../partials/alerts') %>
+
+<div class="container">
+  <div class="form-card">
+    <p class="blue">Welcome back! Sign in</p>
+    <form action="/signin" method="POST">
+      <fieldset>
+        <label>Email</label>
+        <input type="text" required placeholder="Enter email" name="email" />
+        <label>Password</label>
+        <input type="password" required placeholder="Enter password" name="pass" />
+        <input type="submit" value="Sign in" class="btn btn-primary" />
+      </fieldset>
+    </form>
+    <p><a href="/signup">Create a FREE account</a> | <a href="/forgot-password">Forgot password?</a></p>
+  </div>
+</div>

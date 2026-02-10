@@ -1,0 +1,52 @@
+<%- include('../partials/nav-loggedin') %>
+<%- include('../partials/alerts') %>
+
+<div class="container">
+  <div class="row space-between">
+    <div>&nbsp;</div>
+    <a href="/groups/edit/<%= group._id %>" class="btn btn-primary">Edit group</a>
+  </div>
+
+  <h4>Group: <%= group.name.toUpperCase() %></h4>
+  <% if (group.description) { %>
+    <p class="small"><strong>Description:</strong> <%= group.description %></p>
+  <% } %>
+
+  <% if (members.length > 0) { %>
+    <form action="/groups/remove-members/<%= group._id %>" method="POST" name="checkboxesform">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th width="3%"></th>
+            <th width="23%">Name</th>
+            <th width="17%">Phone</th>
+            <th width="22%">Email</th>
+            <th width="35%">Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% members.forEach(c => { %>
+            <tr>
+              <td><input type="checkbox" name="checkbox" value="<%= c._id %>" /></td>
+              <td><a href="/contacts/view/<%= c._id %>"><%= c.fullname.length > 20 ? c.fullname.substring(0,20) + '...' : c.fullname %></a></td>
+              <td><a href="/contacts/view/<%= c._id %>"><%= c.phone ? (c.phone.length > 15 ? c.phone.substring(0,15) + '...' : c.phone) : '----' %></a></td>
+              <td><a href="/contacts/view/<%= c._id %>"><%= c.email ? (c.email.length > 20 ? c.email.substring(0,20) + '...' : c.email) : '----' %></a></td>
+              <td><a href="/contacts/view/<%= c._id %>"><%= c.address ? (c.address.length > 40 ? c.address.substring(0,40) + '...' : c.address) : '----' %></a></td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+
+      <div class="row actions-bar">
+        <button type="submit" class="btn btn-danger" onclick="return confirm('Remove selected contacts from this group?')">Remove from group</button>
+        <label class="select-all-label">
+          <input type="checkbox" id="selectAll" /> Select all
+        </label>
+      </div>
+    </form>
+  <% } else { %>
+    <p class="notify-box">There are no contacts in this group. Go to contacts page, select the contacts you want to group, select the group and click Move.</p>
+  <% } %>
+</div>
+
+<%- include('../partials/footer') %>

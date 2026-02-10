@@ -1,0 +1,31 @@
+<header class="site-header">
+  <div class="container row space-between">
+    <div id="logo"><h1><a href="/contacts">RAINBOW</a></h1></div>
+    <span class="welcome">Welcome, <%= user.email %></span>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <div class="container">
+    <ul class="nav-list">
+      <li><a href="/contacts">Contacts</a></li>
+      <li class="has-dropdown">
+        <a href="/groups">Groups</a>
+        <ul class="dropdown">
+          <li><a href="/groups/add">Add group</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="/settings">Account</a>
+        <ul class="dropdown">
+          <li><a href="/settings">Settings</a></li>
+          <li><a href="/logout">Logout</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <a href="javascript:history.back()" class="btn btn-secondary btn-small">Go back</a>
+</div>

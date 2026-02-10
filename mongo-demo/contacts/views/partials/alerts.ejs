@@ -1,0 +1,11 @@
+<div class="container">
+  <% if (typeof success !== 'undefined' && success) { %>
+    <div class="alert alert-success"><%- success %></div>
+  <% } %>
+  <% if (typeof error !== 'undefined' && error) { %>
+    <div class="alert alert-error"><%- error %></div>
+  <% } %>
+  <% if (typeof notify !== 'undefined' && notify) { %>
+    <div class="alert alert-warning"><%- notify %></div>
+  <% } %>
+</div>

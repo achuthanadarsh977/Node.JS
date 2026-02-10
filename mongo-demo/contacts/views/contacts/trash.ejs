@@ -1,0 +1,50 @@
+<%- include('../partials/nav-loggedin') %>
+<%- include('../partials/alerts') %>
+
+<div class="container">
+  <h2>Trash</h2>
+
+  <div class="row counts-bar">
+    <span><a href="/contacts">Contacts (<%= activeCount %>)</a></span>
+    <span>Trash (<%= trashCount %>)</span>
+  </div>
+
+  <% if (contacts.length > 0) { %>
+    <form action="" method="POST" name="checkboxesform" id="trashForm">
+      <table class="data-table trash-table">
+        <thead>
+          <tr>
+            <th width="3%"></th>
+            <th width="23%">Name</th>
+            <th width="17%">Phone</th>
+            <th width="22%">Email</th>
+            <th width="35%">Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% contacts.forEach(c => { %>
+            <tr>
+              <td><input type="checkbox" name="checkbox" value="<%= c._id %>" /></td>
+              <td class="text-red"><%= c.fullname.length > 20 ? c.fullname.substring(0,20) + '...' : c.fullname %></td>
+              <td><%= c.phone ? (c.phone.length > 15 ? c.phone.substring(0,15) + '...' : c.phone) : '----' %></td>
+              <td><%= c.email ? (c.email.length > 20 ? c.email.substring(0,20) + '...' : c.email) : '----' %></td>
+              <td><%= c.address ? (c.address.length > 40 ? c.address.substring(0,40) + '...' : c.address) : '----' %></td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+
+      <div class="row actions-bar">
+        <button type="submit" formaction="/contacts/restore" class="btn btn-primary">Restore</button>
+        <button type="submit" formaction="/contacts/permanent-delete" class="btn btn-danger" onclick="return confirm('Are you sure? This action cannot be undone.')">Delete</button>
+        <label class="select-all-label">
+          <input type="checkbox" id="selectAll" /> Select all
+        </label>
+      </div>
+    </form>
+  <% } else { %>
+    <p class="notify-box">No contacts here.</p>
+  <% } %>
+</div>
+
+<%- include('../partials/footer') %>

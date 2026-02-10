@@ -1,0 +1,26 @@
+<%- include('../partials/nav-loggedin') %>
+<%- include('../partials/alerts') %>
+
+<div class="container">
+  <h3>Settings</h3>
+
+  <div class="settings-section">
+    <p><strong>Email address</strong></p>
+    <hr />
+    <div class="row">
+      <span><%= user.email %></span>
+      <a href="/settings/change-email">Change</a>
+    </div>
+  </div>
+
+  <div class="settings-section">
+    <p><strong>Password</strong></p>
+    <hr />
+    <div class="row">
+      <span>xxxx</span>
+      <a href="/settings/change-password">Change</a>
+    </div>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>
