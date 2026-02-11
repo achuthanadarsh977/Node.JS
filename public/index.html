@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X-MEN: MUTANT KOMBAT</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+
+  <!-- TITLE SCREEN -->
+  <div id="title-screen" class="overlay active">
+    <div class="title-wrap">
+      <div class="title-sub">X-MEN</div>
+      <h1 class="title-main">MUTANT<br>KOMBAT</h1>
+      <div class="title-tag">PRESS ENTER OR CLICK TO START</div>
+      <div class="title-controls">
+        <span>WASD: MOVE &bull; J: PUNCH &bull; K: KICK &bull; L: SPECIAL &bull; SPACE: BLOCK</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHARACTER SELECT -->
+  <div id="select-screen" class="overlay">
+    <h2 class="select-title">CHOOSE YOUR FIGHTER</h2>
+    <div class="select-grid" id="select-grid"></div>
+    <div class="select-info">
+      <div class="sel-preview" id="sel-preview-left">
+        <div class="sel-avatar" id="sel-avatar-left"></div>
+        <div class="sel-name" id="sel-name-left">???</div>
+        <div class="sel-stats" id="sel-stats-left"></div>
+      </div>
+      <div class="sel-vs">VS</div>
+      <div class="sel-preview" id="sel-preview-right">
+        <div class="sel-avatar" id="sel-avatar-right"></div>
+        <div class="sel-name" id="sel-name-right">CPU</div>
+        <div class="sel-stats" id="sel-stats-right"></div>
+      </div>
+    </div>
+    <div class="sel-footer">CLICK A CHARACTER &bull; PRESS ENTER TO FIGHT</div>
+  </div>
+
+  <!-- FIGHT HUD -->
+  <div id="fight-hud" class="hud hidden">
+    <div class="hud-row">
+      <div class="hud-left">
+        <div class="hud-name" id="hud-p1-name">P1</div>
+        <div class="hp-bar"><div class="hp-fill p1-hp" id="hud-p1-hp"></div><span class="hp-text" id="hud-p1-hp-text">100%</span></div>
+        <div class="nrg-bar"><div class="nrg-fill p1-nrg" id="hud-p1-nrg"></div></div>
+      </div>
+      <div class="hud-center">
+        <div class="hud-round" id="hud-round">ROUND 1</div>
+        <div class="hud-timer" id="hud-timer">99</div>
+        <div class="round-gems">
+          <span class="gem p1-gem" id="gem-p1-0"></span>
+          <span class="gem p1-gem" id="gem-p1-1"></span>
+          <span class="gem-sep">|</span>
+          <span class="gem p2-gem" id="gem-p2-0"></span>
+          <span class="gem p2-gem" id="gem-p2-1"></span>
+        </div>
+      </div>
+      <div class="hud-right">
+        <div class="hud-name" id="hud-p2-name">CPU</div>
+        <div class="hp-bar"><div class="hp-fill p2-hp" id="hud-p2-hp"></div><span class="hp-text" id="hud-p2-hp-text">100%</span></div>
+        <div class="nrg-bar"><div class="nrg-fill p2-nrg" id="hud-p2-nrg"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMBO COUNTER -->
+  <div id="combo-display" class="combo-display hidden">
+    <span id="combo-count">2</span> HIT COMBO
+  </div>
+
+  <!-- ANNOUNCEMENT -->
+  <div id="announcement" class="announcement hidden">
+    <div id="announce-text" class="announce-text"></div>
+  </div>
+
+  <!-- VICTORY -->
+  <div id="victory-screen" class="overlay">
+    <div class="victory-wrap">
+      <div id="victory-label" class="victory-label">VICTORY</div>
+      <div id="victory-char" class="victory-char"></div>
+      <div class="victory-buttons">
+        <button class="mk-btn" id="btn-rematch">REMATCH</button>
+        <button class="mk-btn mk-btn-alt" id="btn-reselect">NEW FIGHTER</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/game.js"></script>
+</body>
+</html>

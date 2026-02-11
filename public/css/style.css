@@ -1,0 +1,119 @@
+/* ================================================================
+   X-MEN: MUTANT KOMBAT — MK11 STYLE
+   ================================================================ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --blood:#cc0000;--dark-red:#8b0000;--gold:#ffd700;--blue:#00aaff;
+  --green:#00ff88;--orange:#ff6600;--dark:#0a0a0f;--panel:rgba(10,10,20,0.92);
+  --dim:#667;
+}
+body{background:#000;color:#fff;font-family:'Orbitron',sans-serif;overflow:hidden;height:100vh;width:100vw;user-select:none}
+#gameCanvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0}
+
+/* OVERLAYS */
+.overlay{position:fixed;top:0;left:0;width:100%;height:100%;display:none;flex-direction:column;align-items:center;justify-content:center;z-index:10;background:rgba(0,0,0,0.95)}
+.overlay.active{display:flex}
+.hidden{display:none!important}
+
+/* TITLE */
+.title-wrap{text-align:center}
+.title-sub{font-family:'Press Start 2P',monospace;font-size:2rem;color:var(--gold);letter-spacing:1rem;text-shadow:0 0 20px rgba(255,215,0,0.5);animation:pulse 2s ease-in-out infinite}
+.title-main{font-family:'Press Start 2P',monospace;font-size:4rem;color:var(--blood);text-shadow:0 0 10px rgba(204,0,0,0.8),0 0 40px rgba(204,0,0,0.4),0 4px 0 #440000;letter-spacing:.3rem;line-height:1.3;margin:.5rem 0}
+.title-tag{font-size:.8rem;color:var(--gold);letter-spacing:.4rem;margin-top:2rem;animation:pulse 1.5s ease-in-out infinite}
+.title-controls{margin-top:2rem;font-size:.55rem;color:var(--dim);letter-spacing:2px}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+
+/* SELECT */
+.select-title{font-family:'Press Start 2P',monospace;font-size:1.4rem;color:var(--gold);text-shadow:0 0 15px rgba(255,215,0,0.4);margin-bottom:1.5rem;letter-spacing:4px}
+.select-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:1.5rem}
+.char-card{width:130px;height:140px;background:var(--panel);border:2px solid #333;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:all .2s;position:relative}
+.char-card:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:0 6px 20px rgba(255,215,0,0.2)}
+.char-card.selected{border-color:var(--blue);box-shadow:0 0 20px rgba(0,170,255,0.4);background:rgba(0,170,255,0.06)}
+.char-card.ai-pick{border-color:var(--blood);box-shadow:0 0 20px rgba(204,0,0,0.4);background:rgba(204,0,0,0.06)}
+.char-card canvas{width:70px;height:70px;margin-bottom:6px}
+.char-card-name{font-family:'Press Start 2P',monospace;font-size:.45rem;color:#fff;text-align:center}
+.char-card-title{font-size:.4rem;color:var(--dim);margin-top:3px}
+
+.select-info{display:flex;align-items:center;gap:2rem;margin-bottom:1rem}
+.sel-preview{width:200px;text-align:center;background:var(--panel);padding:1rem;border:1px solid #222}
+.sel-avatar{width:100px;height:100px;margin:0 auto .5rem}
+.sel-avatar canvas{width:100%;height:100%}
+.sel-name{font-family:'Press Start 2P',monospace;font-size:.7rem;margin-bottom:.5rem}
+.sel-stats{font-size:.5rem;color:var(--dim);text-align:left}
+.sel-stat{display:flex;align-items:center;gap:6px;margin:4px 0}
+.sel-stat-bar{flex:1;height:6px;background:#111}
+.sel-stat-fill{height:100%;transition:width .3s}
+.sel-stat-fill.hp{background:linear-gradient(90deg,#0a0,#0f4)}
+.sel-stat-fill.atk{background:linear-gradient(90deg,#a00,#f44)}
+.sel-stat-fill.def{background:linear-gradient(90deg,#06a,#48f)}
+.sel-stat-fill.spd{background:linear-gradient(90deg,#aa0,#ff4)}
+.sel-vs{font-family:'Press Start 2P',monospace;font-size:2rem;color:var(--blood);text-shadow:0 0 20px rgba(204,0,0,0.6);animation:pulse .8s ease-in-out infinite}
+.sel-footer{font-size:.5rem;color:var(--dim);letter-spacing:3px}
+
+/* FIGHT HUD */
+.hud{position:fixed;top:0;left:0;width:100%;z-index:15;padding:8px 16px;background:linear-gradient(180deg,rgba(0,0,0,.85) 0%,transparent 100%)}
+.hud-row{display:flex;align-items:flex-start;justify-content:space-between}
+.hud-left,.hud-right{flex:1;max-width:420px}
+.hud-right{text-align:right}
+.hud-right .hp-bar{direction:rtl}
+.hud-right .nrg-bar{direction:rtl}
+.hud-name{font-family:'Press Start 2P',monospace;font-size:.6rem;margin-bottom:4px;letter-spacing:2px}
+.hud-left .hud-name{color:var(--blue)}
+.hud-right .hud-name{color:var(--blood)}
+.hp-bar{height:20px;background:#1a0000;border:2px solid #444;position:relative;overflow:hidden;margin-bottom:3px}
+.hp-fill{height:100%;width:100%;transition:width .3s}
+.p1-hp{background:linear-gradient(180deg,#0c4,#083)}
+.p2-hp{background:linear-gradient(180deg,#c00,#800)}
+.hp-fill.critical{animation:hpPulse .4s infinite}
+@keyframes hpPulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hp-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:.55rem;font-weight:bold;text-shadow:1px 1px 2px #000;z-index:2}
+.nrg-bar{height:8px;background:#0a0a1a;border:1px solid #222;overflow:hidden}
+.nrg-fill{height:100%;width:0%;transition:width .3s}
+.p1-nrg{background:linear-gradient(90deg,#04c,#0af,#4df)}
+.p2-nrg{background:linear-gradient(90deg,#c40,#f60,#fa0)}
+.nrg-fill.full{animation:nrgGlow .5s infinite}
+@keyframes nrgGlow{0%,100%{filter:brightness(1)}50%{filter:brightness(1.6)}}
+
+.hud-center{text-align:center;min-width:100px;padding:0 10px}
+.hud-round{font-family:'Press Start 2P',monospace;font-size:.55rem;color:var(--gold);margin-bottom:2px}
+.hud-timer{font-family:'Press Start 2P',monospace;font-size:1.4rem;color:#fff}
+.round-gems{display:flex;gap:6px;justify-content:center;margin-top:4px}
+.gem{width:10px;height:10px;border-radius:50%;border:1px solid #555;background:#222}
+.gem.won{background:var(--gold);border-color:var(--gold);box-shadow:0 0 6px rgba(255,215,0,0.6)}
+.gem-sep{color:#333;font-size:.6rem}
+
+/* COMBO */
+.combo-display{position:fixed;left:60px;top:40%;font-family:'Press Start 2P',monospace;font-size:1.2rem;color:var(--gold);text-shadow:0 0 10px rgba(255,215,0,0.5);z-index:20;animation:comboIn .2s ease}
+@keyframes comboIn{from{transform:scale(1.5);opacity:0}to{transform:scale(1);opacity:1}}
+#combo-count{font-size:2rem;color:var(--blood)}
+
+/* ANNOUNCEMENT */
+.announcement{position:fixed;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;z-index:50;pointer-events:none}
+.announce-text{font-family:'Press Start 2P',monospace;font-size:3rem;color:var(--gold);text-shadow:0 0 40px rgba(255,215,0,0.8),0 0 80px rgba(255,215,0,0.3);animation:announceIn 1.5s ease forwards;text-align:center;line-height:1.5}
+.announce-text.red{color:var(--blood);text-shadow:0 0 40px rgba(204,0,0,0.8)}
+@keyframes announceIn{0%{transform:scale(3);opacity:0}25%{transform:scale(1);opacity:1}75%{opacity:1}100%{transform:scale(.8);opacity:0}}
+
+/* VICTORY */
+#victory-screen{background:radial-gradient(ellipse at center,#1a0a00,#000 70%)}
+.victory-wrap{text-align:center}
+.victory-label{font-family:'Press Start 2P',monospace;font-size:3rem;color:var(--gold);text-shadow:0 0 30px rgba(255,215,0,0.6);margin-bottom:1rem;animation:pulse 1.5s infinite}
+.victory-label.defeat{color:var(--blood);text-shadow:0 0 30px rgba(204,0,0,0.6)}
+.victory-char{font-family:'Press Start 2P',monospace;font-size:1.5rem;margin-bottom:2rem}
+.victory-buttons{display:flex;gap:1rem;justify-content:center}
+
+/* BUTTONS */
+.mk-btn{padding:14px 40px;font-family:'Press Start 2P',monospace;font-size:.8rem;color:var(--gold);background:linear-gradient(180deg,#2a1a00,#1a0a00);border:2px solid var(--gold);cursor:pointer;transition:all .2s;letter-spacing:2px}
+.mk-btn:hover{background:linear-gradient(180deg,#3a2a00,#2a1a00);box-shadow:0 0 20px rgba(255,215,0,0.4);transform:scale(1.05)}
+.mk-btn-alt{color:var(--blue);border-color:var(--blue);background:linear-gradient(180deg,#001a2a,#000a1a)}
+.mk-btn-alt:hover{box-shadow:0 0 20px rgba(0,170,255,0.4)}
+
+/* DAMAGE NUMBERS (rendered on canvas via DOM fallback) */
+.dmg-num{position:fixed;font-family:'Press Start 2P',monospace;font-size:1.2rem;font-weight:bold;pointer-events:none;z-index:25;text-shadow:2px 2px 4px #000;animation:dmgFloat 1s ease-out forwards}
+@keyframes dmgFloat{0%{transform:translateY(0) scale(1.5);opacity:1}100%{transform:translateY(-80px) scale(.8);opacity:0}}
+
+@media(max-width:900px){
+  .select-grid{grid-template-columns:repeat(4,1fr);gap:6px}
+  .char-card{width:90px;height:100px}
+  .title-main{font-size:2.5rem}
+  .select-info{flex-direction:column;gap:1rem}
+}
